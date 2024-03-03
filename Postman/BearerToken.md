@@ -1,4 +1,6 @@
-This is Sample PreCode for get auth bearer token before send request:
+This is Sample PreCode for get auth bearer token before send request in POSTMAN
+
+*Add this code in prerequest
 ```
 var authServiceUrl = pm.environment.get('TOKEN_URL');
 var cname = pm.environment.get('UNAME');
@@ -17,3 +19,4 @@ header: 'Content-Type:application/x-www-form-urlencoded',
     }
     });
 ```
+**And add TOKEN_URL, UNAME, PWD_ENCRYPTED in your environment 
